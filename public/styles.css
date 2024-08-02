@@ -1,0 +1,190 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+}
+
+/* Header Styling */
+h1, h2, h3, h4 {
+  margin: 20px 0;
+  color: white;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+/* Navigation Styling */
+nav {
+  background-color: black;
+  padding: 10px 0; /* Reduced padding */
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+nav .logo {
+  width: 350px; /* Adjust logo size if needed */
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+
+.menu {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menuitem {
+  margin: 0 20px;
+}
+
+.menuitem a {
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.menuitem a:hover {
+  color: #ddd; /* Light gray on hover */
+}
+
+/* Button Styling */
+.button-27 {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 15px;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.button-27:hover {
+  background-color: #ddd; /* Light gray on hover */
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-27:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/* Profile Image Styling */
+.profile-image {
+  width: 500px;
+  max-width: 800px;
+  height: 500px;
+  display: block;
+  margin: 40px auto;
+}
+
+/* Content Layout */
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  margin: 0 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 300px;
+  text-align: center;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .column {
+    flex: 1 0 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Footer Styling */
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Additional Styles */
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+/* Logo Styling */
+.logo {
+  width: 15px; /* Let the browser calculate the width */
+  max-width: auto; /* Ensure the logo does not overflow its container */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the logo horizontally */
+  display: block; /* Make sure the logo is treated as a block element */
+}
+/* Profile Image Styling */
+.profile-image {
+  width: 150px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 20px auto; /* Center the profile picture */
+}
+
+/* Background Image Styling */
+.background-img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover; /* Ensure the image covers the entire element */
+    z-index: -1; /* Place the image behind other content */
+}
